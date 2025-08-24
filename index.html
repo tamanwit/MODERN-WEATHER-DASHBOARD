@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora | Weather Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <span id="splash-overlay" class="splash"></span>
+    <span id="welcome" class="z-depth-4"></span>
+
+    <a id="button"></a>
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <div class="outer-cursor"></div>
+    <nav class="nav sticky">
+        <div class="toptxt">
+            <h2>Aurora.</h2>
+        </div>
+        <div class="center">
+            <ul>
+                <li><a href="#landing">Home</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#travel-planner">Travel Planner</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button id="themeset" class="fa-solid fa-sun"></button>
+        </div>
+    </nav>
+    <div class="landing">
+        
+        <div class="box-type">
+            <h1 class="typewrite" href="" data-period="2000" data-type='[ "Hi, Welcome.", "Check your weather.", "Plan your travels." ]'>
+                <span class="wrap"></span>
+            </h1>
+        </div>
+        <div class="lower-txt">
+            <h3>Your real-time weather companion. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi totam repudiandae, esse voluptas odio consequatur mollitia sint harum deserunt? Reiciendis libero rerum consequatur, saepe voluptates ipsam tenetur earum enim.</h3>
+        </div>
+        <div class="button">
+            <a href="login.html" class="btn">Sign Up</a>
+        </div>
+    </div>
+    
+    <section id="weather" class="weather">
+        <h2 class="heading">Confused What to wear ? Don't worry we've got you covered<br>Check Weather in your City</h2>
+        <div class="form">
+            <form id="weather-form">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="E.g., New York">
+                <button type="button" id="getWeatherBtn">Get Weather</button>
+            </form>
+        </div>
+        <div id="weather-loader" style="display:none;">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Fetching weather...</div>
+        </div>
+        <div id="weather-info">
+            <!-- Weather data disp -->
+        </div>
+    </section>
+    <section id="travel-planner" class="weather">
+        <h2 class="heading">Travel Planner</h2>
+        <div class="form">
+            <form id="travel-form">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" placeholder="E.g., Paris">
+                <label for="travel-date">Date:</label>
+                <input type="date" id="travel-date">
+                <button type="submit">Check Travel Weather</button>
+            </form>
+        </div>
+        <div id="travel-weather-results" class="weather-info">
+            <!-- Travel weather results disp -->
+        </div>
+    </section>
+    <section class="contact" id="contact">
+          <div class="title">
+            <h1 class="titleText">Contact</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, eum.
+            </p>
+          </div>
+          <div class="contact-box">
+                <div class="contactForm">
+                    <h3>Send Message</h3>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Your Name" />
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Email" />
+                    </div>
+                    <div class="inputBox">
+                        <textarea placeholder="Your message..."></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <input type="button" value="Send" />
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <div class="footer">
+        <p class="txt">Created By Tamanwit | All Copyrights Reserved.</p>
+    </div>
+
+    <script src="typewriter.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
