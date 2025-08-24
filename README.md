@@ -55,24 +55,6 @@ Local Storage - User preferences persistence
 
 Accessible Design - Keyboard navigation and screen reader friendly
 
-
-🛠️ Installation & Setup
-bash
-# Clone the repository
-git clone https://github.com/yourusername/weather-dashboard.git
-
-# Navigate to project directory
-cd weather-dashboard
-
-# Open index.html in your browser or use a local server
-# For VS Code users: Use Live Server extension
-🔑 API Configuration
-Get your free API key from OpenWeatherMap
-
-Replace the apiKey variable in script.js:
-
-javascript
-const apiKey = '73cb12b98ada702912a59d372b5947df';
 📱 Screenshots
 <h1>Landing Page Dark Mode</h1>
 <img width="1918" height="995" alt="dark-mode-landing-page" src="https://github.com/user-attachments/assets/eaae531c-3bdb-48fd-908f-07375dfd3c03" />
